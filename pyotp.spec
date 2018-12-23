@@ -4,9 +4,9 @@
 #
 Name     : pyotp
 Version  : 2.2.7
-Release  : 2
-URL      : https://github.com/pyotp/pyotp/archive/v2.2.7.tar.gz
-Source0  : https://github.com/pyotp/pyotp/archive/v2.2.7.tar.gz
+Release  : 3
+URL      : https://github.com/pyauth/pyotp/archive/v2.2.7.tar.gz
+Source0  : https://github.com/pyauth/pyotp/archive/v2.2.7.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -53,7 +53,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1542081393
+export SOURCE_DATE_EPOCH=1545591721
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %check
@@ -62,6 +63,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 PYTHONPATH=%{buildroot}/usr/lib/python3.7/site-packages python3 setup.py test
 %install
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pyotp
 cp LICENSE %{buildroot}/usr/share/package-licenses/pyotp/LICENSE
