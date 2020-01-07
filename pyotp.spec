@@ -4,7 +4,7 @@
 #
 Name     : pyotp
 Version  : 2.2.7
-Release  : 8
+Release  : 9
 URL      : https://github.com/pyauth/pyotp/archive/v2.2.7.tar.gz
 Source0  : https://github.com/pyauth/pyotp/archive/v2.2.7.tar.gz
 Summary  : No detailed summary available
