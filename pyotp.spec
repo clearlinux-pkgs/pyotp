@@ -4,7 +4,7 @@
 #
 Name     : pyotp
 Version  : 2.2.7
-Release  : 10
+Release  : 11
 URL      : https://github.com/pyauth/pyotp/archive/v2.2.7.tar.gz
 Source0  : https://github.com/pyauth/pyotp/archive/v2.2.7.tar.gz
 Summary  : Python One Time Password Library
