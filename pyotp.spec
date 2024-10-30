@@ -7,7 +7,7 @@
 #
 Name     : pyotp
 Version  : 2.9.0
-Release  : 32
+Release  : 33
 URL      : https://github.com/pyauth/pyotp/archive/v2.9.0/pyotp-2.9.0.tar.gz
 Source0  : https://github.com/pyauth/pyotp/archive/v2.9.0/pyotp-2.9.0.tar.gz
 Summary  : Python One Time Password Library
